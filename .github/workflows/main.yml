@@ -56,5 +56,5 @@ jobs:
         with:
         # relative path to the place where source code with Dockerfile is located
           context: ./httpd
-        # Note: tags has to be all lower-case
+        # Note: tags has to be all lower-cas
           tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-epf:httpd
