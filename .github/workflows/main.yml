@@ -2,8 +2,9 @@ name: CI devops 2021 EPF
 on:
   #to begin you want to launch this job in main and develop
   push:
-    branches: -master
-              -dev
+    branches: 
+      - master
+      - dev
   pull_request: 
 
 jobs:
@@ -56,5 +57,5 @@ jobs:
         with:
         # relative path to the place where source code with Dockerfile is located
           context: ./httpd
-        # Note: tags has to be all lower-cas
+        # Note: tags has to be all lower-case
           tags: ${{secrets.DOCKERHUB_USERNAME}}/tp-devops-epf:httpd
