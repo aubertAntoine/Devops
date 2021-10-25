@@ -19,7 +19,7 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: ${{ GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           run: mvn -B verify sonar:sonar -Dsonar.projectKey=aubertAntoine_Devops
                -Dsonar.organization=aubertantoine
                -Dsonar.host.url=https://sonarcloud.io 
