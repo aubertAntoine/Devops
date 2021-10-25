@@ -19,7 +19,7 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          run: mvn -B verify sonar:sonar -Dsonar.projectKey=devops-2020-Dsonar.organization=devops-epf-Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{secrets.SONAR_TOKEN }} --file ./simple-api/pom.xml
+          run: mvn -B verify sonar:sonar -Dsonar.projectKey=aubertAntoine_Devops.organization=aubertantoine.host.url=https://sonarcloud.io -Dsonar.login=${{secrets.SONAR_TOKEN }} --file ./simple-api/pom.xml
    build-and-test-app:
     runs-on: ubuntu-18.04
     steps:
